@@ -7,6 +7,7 @@ Depending
 #########
 
 Python >= 2.6
+
 Django >= 1.3
 
 
