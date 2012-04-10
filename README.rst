@@ -36,11 +36,11 @@ Edit settings.py::
 Formats
 #######
 
-— String
-— Text
-— HTML
-— CSV
-— Markdown
+* String
+* Text
+* HTML
+* CSV
+* Markdown
 
 CSV Snippet
 ***********
@@ -113,5 +113,7 @@ Changelog
 #########
 
 09.04.2012 — Release Snippets version 0.1.3
+
 07.04.2012 — Release Snippets version 0.1.2
+
 27.03.2012 — Release Snippets version 0.1.0
