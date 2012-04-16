@@ -6,8 +6,8 @@ from snippets.factory import snippet_factory
 
 register = template.Library()
 
-@register.filter(name='snippet_bbcode')
-def snippet_bbcode(value):
+@register.filter(name='snippet_shortcode')
+def snippet_shortcode(value):
     search = re.findall(r'\[snippet (\w+)\]', value)
     if search:
         names = list(search)
@@ -17,9 +17,9 @@ def snippet_bbcode(value):
             snippet = snippet_factory.get_snippet_for_obj(obj)
             snippet_dict[obj.slug] = snippet
         for name in names:
-            bbcode = '[snippet %s]' % name
+            shortcode = '[snippet %s]' % name
             text = unicode(snippet_dict.get(name, ''))
-            value = value.replace(bbcode, text)
+            value = value.replace(shortcode, text)
     return value
 
 

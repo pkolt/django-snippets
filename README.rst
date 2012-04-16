@@ -100,18 +100,20 @@ Snippets group::
     {% endfor %}
 
 
-Snippet use BBcode
+Snippet use Shortcode
 ##################
 
-Use the bbcode in the text ``[snippet name]``.
+Use the shortcode in the text ``[snippet name]``.
 
 In the template, add a filter::
 
-    {{ object.text|snippet_bbcode }}
+    {{ object.text|snippet_shortcode }}
 
 
 Changelog
 #########
+
+16.04.2012 — Release Snippets version 0.1.4
 
 09.04.2012 — Release Snippets version 0.1.3
 
