@@ -15,7 +15,7 @@ class SnippetAdmin(admin.ModelAdmin):
 
     def display_bbcode(self, obj):
         return '[snippet %s]' % obj.slug
-    display_bbcode.short_description = 'BBcode'
+    display_bbcode.short_description = 'Shortcode'
 
 class SnippetGroupAdmin(admin.ModelAdmin):
     list_display = ['__str__', 'slug']
