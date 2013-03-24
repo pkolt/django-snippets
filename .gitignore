@@ -1,0 +1,8 @@
+.idea
+.tox
+dist
+build
+*.egg-info
+*.py[co]
+~*
+MANIFEST
